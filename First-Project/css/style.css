@@ -31,6 +31,10 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
 .container {
     max-width: 1114px;
     padding: 0 15px;
@@ -107,5 +111,11 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-
-
+.test-your-email {
+    display: inline-block;
+}
+.email-not-required {
+margin-top: 15px;
+color: rgba(255, 255, 255, 0.8);
+font-size: 14px;
+}
