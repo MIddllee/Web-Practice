@@ -41,6 +41,10 @@ h6 {
     justify-content: center;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
+
 .container {
     max-width: 1114px;
     padding: 0 15px;
@@ -87,13 +91,15 @@ h6 {
 
 .inner {
     height: 100vh;
+    min-height: 910px;
     background: linear-gradient(89.85deg, #23196F 0.13%, #180D5B 99.88%);
     padding-top: 106px;
+
 }
 
 .inner-call-to-action {
     position: relative;
-    max-width: 545px;  
+    max-width: 545px;
 }
 
 .inner-call-to-action ::after {
@@ -104,6 +110,7 @@ h6 {
     position: absolute;
     top: -100px;
     right: -655px;
+    z-index: 0;
 }
 
 .call-to-action-title {
@@ -112,6 +119,9 @@ h6 {
     color: #fff;
     line-height: 1.29;
     margin-top: 55px;
+    z-index: 1;
+    position: relative;
+
 }
 
 .call-to-action-desq {
@@ -140,4 +150,32 @@ h6 {
 
 .email-not-required span {
     margin-left: 15px;
+}
+
+.inner-services-wrap {
+    margin-top: 95px;
+}
+
+.inner-services-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.29;
+    margin-bottom: 30px;
+    color: #fff;
+    max-width: 365px;
+}
+
+.inner-service-list-item {
+    width: 163px;
+    height: 164px;
+    background: rgba(15, 6, 76, 0.45);
+    cursor: pointer;
+}
+
+.inner-service-list-item+.inner-service-list-item {
+    margin-left: 10px;
+}
+
+.inner-service-list-item:hover {
+    background-color: #fff;
 }
